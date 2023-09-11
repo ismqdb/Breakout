@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "typedefs.h": "c",
+        "gameloop.h": "c"
+    }
+}
