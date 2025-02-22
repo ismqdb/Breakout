@@ -37,10 +37,6 @@ void InitFunctions(GameObject* gameObject) {
 
     mustInit(al_init_primitives_addon(), "primitives");
 
-    mustInit(al_install_audio(), "audio");
-    mustInit(al_init_acodec_addon(), "audio codecs");
-    mustInit(al_reserve_samples(16), "reserve samples");
-
     al_register_event_source(gameObject->eventQueue, al_get_keyboard_event_source());
     al_register_event_source(gameObject->eventQueue, al_get_display_event_source(gameObject->display));
     al_register_event_source(gameObject->eventQueue, al_get_timer_event_source(gameObject->timer));
